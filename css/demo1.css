@@ -1,0 +1,203 @@
+ .anim-slide h1
+  {
+    color:#225A86;
+  }
+  .anim-slide h2
+  {
+    color: #fff;
+    font-size: 35px;
+  }
+  .anim-slide h3
+  {
+    color: #fff;
+    font-size: 30px;
+  }
+  .anim-slide h4
+  {
+    color: #fff;
+    font-size: 25px;
+  }
+  .anim-slide div h1#slider{text-shadow: -1px 1px 0px;width:100%; text-align:left;  margin-top:0; position: absolute}
+  .anim-slide div h2#plugin{ width:100%; text-align:left; margin:0 auto;position: absolute}
+  .anim-slide div h3#license{width:100%;  position:absolute}
+  .anim-slide div h4#version{width: 100%; position:absolute}
+
+.anim-slide div h1#slider2{text-shadow: -1px 1px 0px;width:100%; text-align:left;  margin-top: 10%;}
+  .anim-slide div h2#plugin2{ width:100%; text-align:left; margin:0 auto;}
+  .anim-slide div h3#license2{width:100%; left:0; top:75%; position:absolute}
+  .anim-slide div h4#version2{width: 100%;left:0;top: 120%; position:absolute}
+  
+
+.anim-slide2 div h1#slider{text-shadow: -1px 1px 0px;width:100%; text-align:left; top: 0; margin-top:0; position: absolute}
+  .anim-slide2 div h2#plugin{ width:100%; text-align:left; top: 0; margin:0 auto;position: absolute}
+  .anim-slide2 div h3#license{width:100%; top: 0;  position:absolute}
+  .anim-slide2 div h4#version{width: 100%; top: 0; position:absolute}
+
+ .anim-slide2 div h6#bslider{width:100%; text-align:right;  margin-top: 10%; }
+  .anim-slide2 div h6#bplugin{ width:100%; text-align:right; margin:0 auto;}
+  .anim-slide2 div h6#blicense{width:100%; text-align:right; top:100px; right:130px;position:absolute}
+  .anim-slide2 div h6#bversion{width: 100%; text-align:right;top:60px; right:-20px; position:absolute; }
+  .anim-slide2 div h6#bversion1{width: 100%; text-align:right;top:130px; right:230px; position:absolute; }
+  
+  .bversion{ margin-right:50px;  height:690px;background-size: 500px; }
+.bversion1{ width:90%; padding: 100px 0; text-align: left; background-size: 250px; }
+ 
+   .anim-slide2 div h6#bb1{ width:100%; text-align:left; margin:0 auto;}
+  .anim-slide2 div h6#bb2{ text-align:right; top:100px; left:130px;position:absolute}
+  .anim-slide2 div h6#bb3{ text-align:right;top:60px; left:110px; position:absolute; }
+  .anim-slide2 div h6#bb4{ text-align:right;top:130px; left:230px; position:absolute; }
+  .blink {animation-delay: 2s;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+.road{
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 700%;
+  z-index:-1;
+}
+
+.car{
+  background:url('../images/history/HISTORY-REVEISED/2004_BORN.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 60px;
+  z-index:106;
+  -webkit-transition: 2s ease-in-out;
+}
+
+
+@-webkit-keyframes moveground {
+	0% {margin-left: 0px;}
+	100% {margin-left: -3000px;}
+}
+
+@-webkit-keyframes movemountain {
+	0% {margin-left: 0px;}
+	100% {margin-left: -500px;}
+}
+
+
+.road{
+  background-position: 466px 100%;
+  -webkit-animation: moveground 25s linear infinite;
+}
+
+
+.mkd-iwt-custom-icon img{width: 100% !important}
+  
+.anim-slide2 div h6#bfan{    text-align: right; right: 5%; position: absolute;z-index: 1; margin-top: 70%; }
+.anim-slide2 div h5#bfan1{text-align:right;right: 141px;margin-top: 212px; position:absolute; z-index:1; }
+.anim-slide2 div h5#bfan2{position: absolute;z-index: 1;right: 92px;margin-top: 330px; }
+.anim-slide2 div h5#bfan3{position: absolute;z-index: 1;right: 57px;margin-top: 405px;}
+  .anim-slide2 div h6#bplugina{ position:absolute; right:170px; bottom:100px;}
+   .anim-slide2 div h6#cplugina{ position:absolute; right:185px; bottom:140px;}
+   .anim-slide2 div h6#dplugina{ position:absolute; right:175px; bottom:202px;}
+  
+
+.slow-spin {
+  -webkit-animation: slow-spin 3s infinite linear;
+  animation: slow-spin 3s infinite linear;
+}
+
+@keyframes slow-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.bird-spin {
+  -webkit-animation: slow-spin 3s infinite linear;
+  animation: bird-spin 3s infinite linear;
+}
+
+@keyframes bird-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  35% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+ 70% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.og{    z-index: 27; white-space: nowrap;font-size: 60px !important; line-height: 60px;    font-weight: 700; color: rgb(255, 255, 255);letter-spacing: 0px; font-family: Merriweather;    text-transform: lowercase;}
+
+.ogs {
+    z-index: 28;
+    white-space: nowrap;
+    font-size: 24px !important;
+    line-height: 35px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-family: Caveat;
+    text-transform: lowercase;
+	
+    }
+	.ogp{
+    z-index: 29;
+    max-width: 470px;
+    white-space: normal;
+    font-size: 14px !important;
+    line-height: 26px;
+    font-weight: 300;
+    color: rgb(255, 255, 255) !important;
+    letter-spacing: 0px;
+    font-family: Raleway;
+	text-align:left;
+	box-sizing: content-box;
+   
+}
+  .anim-slide h3#todo{top: 0%;left: 20%;}
+  .anim-slide h3#bounce{top: 15%;left: 49%;}
+  .anim-slide h4#bounceUp{top: 15%;left: 60%;}
+  .anim-slide h4#bounceRight{top: 15%;left: 75%;}
+  .anim-slide h3#fade{top:31%;left: 20%;}
+  .anim-slide h4#fadeDown{top: 43%;left: 28%;}
+  .anim-slide h4#fadeUp{top: 31%;left: 28%;}
+  .anim-slide h3#rotate{top: 50%;left: 49%;}
+  .anim-slide h4#rotateRight{top: 50%;left: 61%;}
+  .anim-slide h4#rotateLeft{top: 50%;left: 80%;}
+
+  .anim-slide img#css3{left: 35%;top: 4%;}
+  .anim-slide img#html5{left: 52%;top: -1%;}
+  .anim-slide img#jquery{top: 60%;left: 41%;}
+  .anim-slide img#modernizr{width:260px;top: 75%;left: 20%;}
+  .anim-slide h2#animatecss{top: 69%;left: 60%;color: #f35626;}
+  
+  div#demo{text-align: center;}
+  div#demo>a{display:inline-block;text-decoration: none;}
+  div#demo>a>h4{padding: 5px 8px;margin: 20px;background-color: #225A86;color: #fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.15);}
+  p#credits{z-index:-1;position: fixed;bottom: 0px;width: 100%;text-align: center;font-size: 14px;}
+  p#credits>a{font-weight: bold;color: #999;text-decoration: none;}
+  img#github-logo{z-index:-1;position: fixed;bottom: -20px;right: 2%;opacity: 0.4;}
